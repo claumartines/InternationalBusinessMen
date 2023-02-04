@@ -198,7 +198,6 @@
 				43F609B2298BC2E000A8A07C /* InternationalBusinessMen.entitlements */,
 				43F60A8E298BC86200A8A07C /* Design */,
 				43F609F6298BC45B00A8A07C /* Utilities */,
-				43F609FF298BC45B00A8A07C /* log.swift */,
 				43F609B3298BC2E000A8A07C /* Preview Content */,
 			);
 			path = InternationalBusinessMen;
@@ -266,6 +265,7 @@
 				43F60A00298BC45B00A8A07C /* Library */,
 				43F60A1B298BC45B00A8A07C /* Localizable.strings */,
 				43F60A21298BC45C00A8A07C /* Resource */,
+				43F609FF298BC45B00A8A07C /* log.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
