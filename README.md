@@ -1,4 +1,6 @@
-# EXAMPLE: SwiftUI + MVVM + Combine + Clean Architecture
+# EXAMPLE
+
+## SwiftUI + MVVM + Combine + Clean Architecture
 
 <img src="README_FULL.gif" style="width: 30%;">
 To see the best resolution click here:
