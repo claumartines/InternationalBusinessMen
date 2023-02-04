@@ -1,6 +1,18 @@
 # International Business Men.
 You work for GNB (Goliath National Bank), and your manager, Barney Stinson, has asked you to design and implement a mobile application to help the firm executives who are always flying around the globe. Your executives need a list of every product GNB trades with, and the total sum of sales of those products in different currencies.
 
+## DEVELOPED COMPLETED
+
+<img src="README_FULL.gif" style="width: 30%;">
+To see the best resolution click here:
+https://github.com/claumartines/InternationalBusinessMen/blob/main/README_MOVIE.mp4
+
+## ARCHITECTURE
+
+<img src="README_PROJECT.png" style="width: 30%;">  
+
+# REQUIREMENTS
+
 ## API
 https://android-ios-service.herokuapp.com/rates will return you a document with the following formats:
 
