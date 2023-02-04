@@ -1,0 +1,38 @@
+/* 
+  Localizable.strings
+  testAPI
+
+  Created by Surya Pratap Singh on 28/12/22.
+  
+*/
+
+// -----------------------------------------------------
+// HOME VIEW
+// -----------------------------------------------------
+
+"home_total" = "Total";
+"home_title" = "International Business";
+"home_showAll" = "Show all";
+
+// -----------------------------------------------------
+// DETAIL VIEW
+// -----------------------------------------------------
+
+"detail_to" = " to ";
+"detail_total" = "Total:";
+"detail_btnRates" = "Rates";
+
+
+// -----------------------------------------------------
+// RATES VIEW
+// -----------------------------------------------------
+
+"rates_title" = "Rates";
+
+
+// -----------------------------------------------------
+// MODEL RESULTS
+// -----------------------------------------------------
+
+"MODEL_NO_LOAD" = "Loading...";
+"MODEL_NO_RESULT" = "No results found";
