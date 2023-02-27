@@ -8,12 +8,14 @@
 import Foundation
 import Alamofire
 
+/// A custom error type that encapsulates both an `AFError` and a `ErrorServicesBackend` error.
 struct ErrorServices: Error {
-  let initialError: AFError
-  let backendError: ErrorServicesBackend?
+    let initialError: AFError  // The initial error that occurred.
+    let backendError: ErrorServicesBackend?  // The backend error, if there is one.
 }
 
+/// A Codable struct that represents an error from the backend API.
 struct ErrorServicesBackend: Codable, Error {
-    var status: String
-    var message: String
+    var status: String  // The status code of the error.
+    var message: String  // The error message.
 }

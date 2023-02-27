@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct cellRate: View {
+struct CellRate: View {
         
     let from:String
     let rate:Double

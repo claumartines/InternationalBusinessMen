@@ -8,46 +8,64 @@
 import SwiftUI
 
 /// Detail screen with transition list of a product
-struct detailView: View {
+struct DetailView: View {
     
-    @ObservedObject var ratesModel = ratesViewModel()
-    var title:String
-    var trans:[transaction]
+    // MARK: - Properties
     
-    @State var total:Double = 0
+    // ViewModel to fetch rates data
+    @ObservedObject var ratesModel = RatesViewModel()
+    
+    // Title for the detail view
+    var title: String
+    
+    // List of transactions for a product
+    var trans: [Transaction]
+    
+    // Total sum of all transactions
+    @State private var total: Double = 0
+    
+    // MARK: - Body
     
     var body: some View {
         
-        VStack{
+        VStack {
+            // Navigation view for the detail screen
             NavigationView {
+                // Form to display transaction details
                 Form {
                     // List transition of a Product
                     ForEach(trans, id: \.id) { tran in
                         HStack{
+                            // Transaction amount
                             Text(String(format: "%.2f",tran.amount.roundToDecimal(2)))
                                 .styleRegular()
                             
+                            // Transaction currency
                             Text("(" + tran.currency + ")")
                                 .styleSubTitle()
                             Spacer()
+                            
+                            // "equals" symbol
                             Text("=")
                                 .styleSubTitle()
                             Spacer()
                             
-                            // CALCULATE CHANGE
+                            // Converted transaction value
                             if ratesModel.status == "MODEL_RESULTS" {
-                                Text(String(format: "%.2f",ratesModel.getChanger(from: tran.currency, value: tran.amount).value.roundToDecimal(2)))
+                                Text(String(format: "%.2f", ratesModel.getExchangeRate(from: tran.currency, value: tran.amount).value.roundToDecimal(2)))
                                     .styleRegular()
                             } else {
                                 Text(ratesModel.status)
                                     .styleRegular()
                             }
+                            
+                            // Currency used for conversion
                             Text("(" + constant_RateMain + ")")
                                 .styleSubTitle()
                         }
                     }
                     
-                    // SUM TOTAL
+                    // Total sum of all transactions
                     if total > 0 {
                         HStack{
                             Text("detail_total")
@@ -59,31 +77,31 @@ struct detailView: View {
                                 .styleSubTitle()
                         }
                     }
-
                 }
             }
+            // Toolbar to show the list of rates
             .toolbar {
-                // Button to see the list of rates
                 NavigationLink(
-                    destination: ratesView(rates: ratesModel.rates),
+                    destination: RatesView(rates: ratesModel.rates),
                     label: {
                         Text("detail_btnRates")
                     })
-
-                
             }
             .navigationTitle(title)
         }
+        // Calculate the total sum when the view appears
         .onAppear{
             calculateTotal()
         }
     }
     
-    // Calculate Total Sum
-    func calculateTotal(){
+    // MARK: - Private functions
+    
+    /// Calculate the total sum of all transactions
+    func calculateTotal() {
         total = 0
         for tran in trans {
-            total += ratesModel.getChanger(from: tran.currency, value: tran.amount).value
+            total += ratesModel.getExchangeRate(from: tran.currency, value: tran.amount).value
         }
     }
 }

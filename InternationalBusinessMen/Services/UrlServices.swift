@@ -1,21 +1,24 @@
 import Foundation
 
-/// A URL extension where all API calls can be obtained.
-extension URL{
+/// An extension on the `URL` class to provide URLs for accessing the API endpoints.
+extension URL {
     
-    /// URL to rates
-    static func rates()->URL?
-    {
-        guard let url = URL(string: "\(API.URL)/rates") else {return nil}
-        return url
-    }    
-
-    /// URL to transactions
-    static func transactions()->URL?
-    {
-        guard let url = URL(string: "\(API.URL)/transactions") else {return nil}
+    /// Returns the URL for accessing the rates endpoint.
+    static func rates() -> URL? {
+        // Constructs the URL for the rates endpoint, using the base API URL from the `API` struct.
+        guard let url = URL(string: "\(API.URL)/rates") else {
+            return nil
+        }
         return url
     }
-
+    
+    /// Returns the URL for accessing the transactions endpoint.
+    static func transactions() -> URL? {
+        // Constructs the URL for the transactions endpoint, using the base API URL from the `API` struct.
+        guard let url = URL(string: "\(API.URL)/transactions") else {
+            return nil
+        }
+        return url
+    }
     
 }

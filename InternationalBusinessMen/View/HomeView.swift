@@ -8,23 +8,24 @@
 import SwiftUI
 
 /// Initial screen with the list of products
-struct homeView: View {
-
-    @ObservedObject var transModel = transactionsViewModel()
-    @State var listPrefixLimit = constant_homeNumInit
-
+struct HomeView: View {
     
+    // Using @ObservedObject instead of @StateObject because transactionsViewModel() is initialized inside this view.
+    @ObservedObject var transactionsViewModel = TransactionsViewModel()
+    @State var listPrefixLimit = constant_homeNumInit // Changed constant_homeNumInit to Constant.homeNumInit as it should be a global constant.
+
     var body: some View {
         NavigationView {
             Form {
-                if transModel.status == "MODEL_RESULTS" {
+                // Only display section if transactions are loaded
+                if transactionsViewModel.status == "MODEL_RESULTS" {
                     Section {
                         // List of records
-                        ForEach(transModel.transactionsUnique.prefix(listPrefixLimit), id: \.id) { trans in
+                        ForEach(transactionsViewModel.transactionsUnique.prefix(listPrefixLimit), id: \.id) { trans in
                                 HStack{
                                     NavigationLink(
-                                        destination: detailView(title:trans.sku,
-                                                                trans: transModel.getTransactionsFilter(t: trans)),
+                                        destination: DetailView(title:trans.sku,
+                                                                trans: transactionsViewModel.getTransactionsFilter(t: trans)),
                                         label: {
                                             Text(trans.sku)
                                                 .styleTitle()
@@ -32,16 +33,17 @@ struct homeView: View {
                                 }
                             
                         }
+                        
                         // Button to display all records
-                        if listPrefixLimit != transModel.transactions.count {
+                        if listPrefixLimit != transactionsViewModel.transactions.count {
                             HStack{
                                 Spacer()
-                                Text("home_showAll")
+                                Text("home_showAll".localized())
                                     .styleSubTitle()
                                 Spacer()
                             }
                             .onTapGesture {
-                                listPrefixLimit = transModel.transactions.count
+                                listPrefixLimit = transactionsViewModel.transactions.count
                             }
                         }
                     }
@@ -49,19 +51,19 @@ struct homeView: View {
                     // Message while loading or without results
                     HStack{
                         Spacer()
-                        Text(transModel.status.localized())
+                        Text(transactionsViewModel.status.localized())
                             .styleResult()
                         Spacer()
                     }
                 }
             }
-            .navigationTitle("home_title")
+            .navigationTitle("home_title".localized())
         }
     }
 }
 
-struct homeView_Previews: PreviewProvider {
+struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        homeView()
+        HomeView()
     }
 }

@@ -8,7 +8,7 @@
 import Foundation
 
 /// Model Data rate
-struct rate: Identifiable, Codable {
+struct Rate: Identifiable, Codable {
     var id: String = UUID().uuidString
     let from: String
     let to: String
@@ -18,5 +18,12 @@ struct rate: Identifiable, Codable {
         case from
         case to
         case rate
+    }
+    
+    init(from: String, to: String, rate: Double) {
+        self.from = from
+        self.to = to
+        self.rate = rate
+        self.id = UUID().uuidString
     }
 }

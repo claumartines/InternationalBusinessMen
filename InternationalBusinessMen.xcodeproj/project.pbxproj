@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4306654E298DC52300BE0AF7 /* detailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4306654D298DC52300BE0AF7 /* detailView.swift */; };
+		4306654E298DC52300BE0AF7 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4306654D298DC52300BE0AF7 /* DetailView.swift */; };
 		43066550298DD39C00BE0AF7 /* cellTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4306654F298DD39C00BE0AF7 /* cellTransaction.swift */; };
 		43066552298DD61A00BE0AF7 /* constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43066551298DD61A00BE0AF7 /* constant.swift */; };
 		43066554298DD71C00BE0AF7 /* cellRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43066553298DD71C00BE0AF7 /* cellRate.swift */; };
 		43066556298DED6400BE0AF7 /* cellTransactionSimple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43066555298DED6400BE0AF7 /* cellTransactionSimple.swift */; };
 		430E0C81298D19F00070C956 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 430E0C80298D19F00070C956 /* Alamofire */; };
-		430E0C85298D30A90070C956 /* transactionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430E0C83298D30A90070C956 /* transactionsViewModel.swift */; };
-		430E0C86298D30A90070C956 /* ratesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430E0C84298D30A90070C956 /* ratesViewModel.swift */; };
+		430E0C85298D30A90070C956 /* TransactionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430E0C83298D30A90070C956 /* TransactionsViewModel.swift */; };
+		430E0C86298D30A90070C956 /* RatesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430E0C84298D30A90070C956 /* RatesViewModel.swift */; };
 		430E0C88298D33F40070C956 /* ProtocolServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430E0C87298D33F40070C956 /* ProtocolServices.swift */; };
 		430E0C8A298D343F0070C956 /* ErrorServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430E0C89298D343F0070C956 /* ErrorServices.swift */; };
 		430E0C8D298D40570070C956 /* AlamofireNetworkActivityLogger in Frameworks */ = {isa = PBXBuildFile; productRef = 430E0C8C298D40570070C956 /* AlamofireNetworkActivityLogger */; };
-		430E0C8F298DB6FD0070C956 /* homeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430E0C8E298DB6FD0070C956 /* homeView.swift */; };
-		4336B904298E6A2E00F0A96B /* ratesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4336B903298E6A2E00F0A96B /* ratesView.swift */; };
+		430E0C8F298DB6FD0070C956 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430E0C8E298DB6FD0070C956 /* HomeView.swift */; };
+		4336B904298E6A2E00F0A96B /* RatesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4336B903298E6A2E00F0A96B /* RatesView.swift */; };
 		4336B906298E75BC00F0A96B /* doubleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4336B905298E75BC00F0A96B /* doubleExtension.swift */; };
 		43F609AD298BC29800A8A07C /* InternationalBusinessMenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F609AC298BC29800A8A07C /* InternationalBusinessMenApp.swift */; };
 		43F609B1298BC2E000A8A07C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43F609B0298BC2E000A8A07C /* Assets.xcassets */; };
@@ -55,8 +55,8 @@
 		43F60A87298BC46400A8A07C /* RequestServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F60A35298BC46100A8A07C /* RequestServices.swift */; };
 		43F60A8B298BC46400A8A07C /* UrlServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F60A39298BC46100A8A07C /* UrlServices.swift */; };
 		43F60A8D298BC46400A8A07C /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F60A3B298BC46100A8A07C /* Services.swift */; };
-		43F60A95298BCFC700A8A07C /* ratesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F60A94298BCFC700A8A07C /* ratesModel.swift */; };
-		43F60A97298BCFFF00A8A07C /* transactionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F60A96298BCFFF00A8A07C /* transactionsModel.swift */; };
+		43F60A95298BCFC700A8A07C /* RatesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F60A94298BCFC700A8A07C /* RatesModel.swift */; };
+		43F60A97298BCFFF00A8A07C /* TransactionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F60A96298BCFFF00A8A07C /* TransactionsModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,17 +77,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4306654D298DC52300BE0AF7 /* detailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailView.swift; sourceTree = "<group>"; };
+		4306654D298DC52300BE0AF7 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		4306654F298DD39C00BE0AF7 /* cellTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cellTransaction.swift; sourceTree = "<group>"; };
 		43066551298DD61A00BE0AF7 /* constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constant.swift; sourceTree = "<group>"; };
 		43066553298DD71C00BE0AF7 /* cellRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cellRate.swift; sourceTree = "<group>"; };
 		43066555298DED6400BE0AF7 /* cellTransactionSimple.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cellTransactionSimple.swift; sourceTree = "<group>"; };
-		430E0C83298D30A90070C956 /* transactionsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = transactionsViewModel.swift; sourceTree = "<group>"; };
-		430E0C84298D30A90070C956 /* ratesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ratesViewModel.swift; sourceTree = "<group>"; };
+		430E0C83298D30A90070C956 /* TransactionsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionsViewModel.swift; sourceTree = "<group>"; };
+		430E0C84298D30A90070C956 /* RatesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatesViewModel.swift; sourceTree = "<group>"; };
 		430E0C87298D33F40070C956 /* ProtocolServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolServices.swift; sourceTree = "<group>"; };
 		430E0C89298D343F0070C956 /* ErrorServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorServices.swift; sourceTree = "<group>"; };
-		430E0C8E298DB6FD0070C956 /* homeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeView.swift; sourceTree = "<group>"; };
-		4336B903298E6A2E00F0A96B /* ratesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ratesView.swift; sourceTree = "<group>"; };
+		430E0C8E298DB6FD0070C956 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		4336B903298E6A2E00F0A96B /* RatesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesView.swift; sourceTree = "<group>"; };
 		4336B905298E75BC00F0A96B /* doubleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = doubleExtension.swift; sourceTree = "<group>"; };
 		43F609A9298BC29800A8A07C /* InternationalBusinessMen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InternationalBusinessMen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43F609AC298BC29800A8A07C /* InternationalBusinessMenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternationalBusinessMenApp.swift; sourceTree = "<group>"; };
@@ -127,8 +127,8 @@
 		43F60A35298BC46100A8A07C /* RequestServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestServices.swift; sourceTree = "<group>"; };
 		43F60A39298BC46100A8A07C /* UrlServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UrlServices.swift; sourceTree = "<group>"; };
 		43F60A3B298BC46100A8A07C /* Services.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
-		43F60A94298BCFC700A8A07C /* ratesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ratesModel.swift; sourceTree = "<group>"; };
-		43F60A96298BCFFF00A8A07C /* transactionsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = transactionsModel.swift; sourceTree = "<group>"; };
+		43F60A94298BCFC700A8A07C /* RatesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesModel.swift; sourceTree = "<group>"; };
+		43F60A96298BCFFF00A8A07C /* TransactionsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,8 +161,8 @@
 		430E0C82298D30A90070C956 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				430E0C84298D30A90070C956 /* ratesViewModel.swift */,
-				430E0C83298D30A90070C956 /* transactionsViewModel.swift */,
+				430E0C84298D30A90070C956 /* RatesViewModel.swift */,
+				430E0C83298D30A90070C956 /* TransactionsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -231,9 +231,9 @@
 		43F609D7298BC45400A8A07C /* View */ = {
 			isa = PBXGroup;
 			children = (
-				430E0C8E298DB6FD0070C956 /* homeView.swift */,
-				4306654D298DC52300BE0AF7 /* detailView.swift */,
-				4336B903298E6A2E00F0A96B /* ratesView.swift */,
+				430E0C8E298DB6FD0070C956 /* HomeView.swift */,
+				4306654D298DC52300BE0AF7 /* DetailView.swift */,
+				4336B903298E6A2E00F0A96B /* RatesView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -251,8 +251,8 @@
 		43F609E7298BC45500A8A07C /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				43F60A94298BCFC700A8A07C /* ratesModel.swift */,
-				43F60A96298BCFFF00A8A07C /* transactionsModel.swift */,
+				43F60A94298BCFC700A8A07C /* RatesModel.swift */,
+				43F60A96298BCFFF00A8A07C /* TransactionsModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -512,8 +512,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				430E0C86298D30A90070C956 /* ratesViewModel.swift in Sources */,
-				43F60A97298BCFFF00A8A07C /* transactionsModel.swift in Sources */,
+				430E0C86298D30A90070C956 /* RatesViewModel.swift in Sources */,
+				43F60A97298BCFFF00A8A07C /* TransactionsModel.swift in Sources */,
 				43F60A5F298BC46400A8A07C /* ActivityIndicator.swift in Sources */,
 				43F60A5B298BC46400A8A07C /* stringExtension.swift in Sources */,
 				43F60A5D298BC46400A8A07C /* log.swift in Sources */,
@@ -521,8 +521,8 @@
 				43066556298DED6400BE0AF7 /* cellTransactionSimple.swift in Sources */,
 				43F60A87298BC46400A8A07C /* RequestServices.swift in Sources */,
 				43F609AD298BC29800A8A07C /* InternationalBusinessMenApp.swift in Sources */,
-				4336B904298E6A2E00F0A96B /* ratesView.swift in Sources */,
-				4306654E298DC52300BE0AF7 /* detailView.swift in Sources */,
+				4336B904298E6A2E00F0A96B /* RatesView.swift in Sources */,
+				4306654E298DC52300BE0AF7 /* DetailView.swift in Sources */,
 				43066550298DD39C00BE0AF7 /* cellTransaction.swift in Sources */,
 				43F60A74298BC46400A8A07C /* imageExtension.swift in Sources */,
 				43F60A5C298BC46400A8A07C /* stringValitation.swift in Sources */,
@@ -535,11 +535,11 @@
 				43066554298DD71C00BE0AF7 /* cellRate.swift in Sources */,
 				4336B906298E75BC00F0A96B /* doubleExtension.swift in Sources */,
 				43F60A5E298BC46400A8A07C /* textFieldCustomStyle.swift in Sources */,
-				430E0C8F298DB6FD0070C956 /* homeView.swift in Sources */,
+				430E0C8F298DB6FD0070C956 /* HomeView.swift in Sources */,
 				43F60A8D298BC46400A8A07C /* Services.swift in Sources */,
-				43F60A95298BCFC700A8A07C /* ratesModel.swift in Sources */,
+				43F60A95298BCFC700A8A07C /* RatesModel.swift in Sources */,
 				430E0C8A298D343F0070C956 /* ErrorServices.swift in Sources */,
-				430E0C85298D30A90070C956 /* transactionsViewModel.swift in Sources */,
+				430E0C85298D30A90070C956 /* TransactionsViewModel.swift in Sources */,
 				43F60A75298BC46400A8A07C /* textFieldExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
