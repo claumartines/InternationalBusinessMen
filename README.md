@@ -1,5 +1,15 @@
-# International Business Men.
-You work for GNB (Goliath National Bank), and your manager, Barney Stinson, has asked you to design and implement a mobile application to help the firm executives who are always flying around the globe. Your executives need a list of every product GNB trades with, and the total sum of sales of those products in different currencies.
+# EXAMPLE
+
+## SwiftUI + MVVM + Combine + Clean Architecture
+
+<img src="README_FULL.gif" style="width: 30%;">
+Video: https://github.com/claumartines/InternationalBusinessMen/blob/main/README_MOVIE.mp4
+
+## ARCHITECTURE
+
+<img src="README_PROJECT.png" style="width: 30%;">  
+
+# REQUIREMENTS
 
 ## API
 https://android-ios-service.herokuapp.com/rates will return you a document with the following formats:
@@ -27,10 +37,8 @@ Each dictionary represents a transaction of a given product (indicated by the pr
 Your application should download this information upon starting and give the user the choice of which product they want to see. When the user selects a product, the application must show each of the transactions related to that product and a sum of all the transactions transformed into EUR.
 For example, for the sample data, the total sum for the product T2006 should be 14,99 EUR.
 
-## Requirements
 - Do not block the UI while downloading the data from the network. Do not download the data from the network before showing the UI.
 - The use of design patterns, DI, well structured code and project architecture will be valued (do it as you would with a project with a larger scope).
- - Remember that some conversion rates are missing, and they should be derived using the information provided.
- - You must use Swift and any third party libraries, as you would do with any project.
- - iOS min version should be 14.0
-
+- Remember that some conversion rates are missing, and they should be derived using the information provided.
+- You must use Swift and any third party libraries, as you would do with any project.
+- iOS min version should be 14.0
